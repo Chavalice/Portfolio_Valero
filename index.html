@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0e">
+  <meta name="description" content="Portfolio Valero — web development, game development, robotics, UI/UX, and database projects.">
+  <title>VALERO — Digital Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten</a>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <div class="pointer-aura" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Valero — kembali ke beranda" data-home>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" role="img"><path d="M22 3 7 11v13l15 17 15-17V11L22 3Z"/><path d="m15 13 7 17 7-17M11 23h22"/><path d="m26 9 6 3-5 5"/></svg>
+        </span>
+        <span class="brand-word">VALERO<span class="brand-dot">.</span><small>PERSONAL ARCHIVE / 2026</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="#about" data-scroll="about">IDENTITY</a>
+        <a href="#projects" data-scroll="projects">PROJECTS <span class="nav-count">07</span></a>
+        <a href="#certificates" data-scroll="certificates">CREDENTIALS</a>
+        <a href="#contact" data-scroll="contact">CONTACT</a>
+      </nav>
+      <a class="header-cta" href="#contact" data-scroll="contact"><span class="status-led"></span> OPEN TO CREATE <span class="arrow">↗</span></a>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div id="app-view" aria-live="polite">
+        <section class="view-error"><p class="eyebrow" style="justify-content:center">INITIALIZING ARCHIVE</p><h1>LOADING PORTFOLIO...</h1><p>Jika tampilan ini tidak berubah, pastikan JavaScript aktif.</p></section>
+      </div>
+      <noscript><p class="noscript-note">Website ini membutuhkan JavaScript aktif untuk menampilkan katalog proyek dan halaman detailnya.</p></noscript>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#home" data-home>V<span>.</span></a><p>© <span id="year-now">2026</span> VALERO — PERSONAL DIGITAL ARCHIVE</p><a href="#top" class="back-top" data-scroll="top">BACK TO TOP ↑</a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
